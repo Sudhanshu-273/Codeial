@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codeial : SignIn</title>
+    <title>Codeial : SignUp</title>
     <link rel="stylesheet" href="/css/signin.css">
 </head>
    
@@ -13,11 +13,12 @@
 <body>
     <div class="container">
         <h1>Sign Up to Codeial</h1>
-        <form action="" method="post">
+        <form action="/users/create" method="post">
             <input class="inp" type="text" name="email" id="user_email" placeholder="Enter E-Mail" required>
             <input class="inp" type="text" name="name" id="user_name" placeholder="Enter Name">
-            <input class="inp" type="text" name="password" id="user_password" placeholder="Enter password" required>
-            <button type="submit" id="btn">Sign In</button>
+            <input class="inp" type="password" name="password" id="user_password" placeholder="Enter password" required>
+            <input class="inp" type="password" name="confirm_password" id="user_password" placeholder="Confirm password" required>
+            <button type="submit" id="btn">Sign Up</button>
         </form>
 
     </div>
