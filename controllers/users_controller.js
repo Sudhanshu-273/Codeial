@@ -1,3 +1,5 @@
 module.exports.profile = function(req, res){
-    res.end('<h1>Users Controller</h1>');
+    return res.render('users', {
+        title : "Codeial/Users"
+    });
 }

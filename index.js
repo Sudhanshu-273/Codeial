@@ -7,6 +7,8 @@ const port = 8000;
 
 app.use('/', require('./routes'));
 
+app.use(express.static('assets'));
+
 //set up the view engine
 
 app.set('view engine', 'ejs');
