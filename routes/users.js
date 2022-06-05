@@ -14,6 +14,8 @@ router.get('/posts', postsController.posts);
 router.get('/signup', usersController.signup);
 router.get('/signin', usersController.signin);
 
+router.post('/create', usersController.create);
+
 //for any further routes, access from here
 
 // router.use('/routerName', require('./routerFile'))
